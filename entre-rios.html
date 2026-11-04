@@ -2,6 +2,7 @@
 
 <html lang="es" style="--estado: var(--rojo);">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,7 +38,10 @@
     <link rel="canonical" href="https://www.electricista.net.ar/entre-rios.html">
 
     <script defer src="busqueda.js"></script>
+
     <script defer src="form.js"></script>
+
+
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
@@ -93,7 +97,6 @@
 </head>
 
 <body>
-
 <a class="button-flotante" href="#footer" aria-label="Ir a la sección del pie de pagina"
     title="Ir a la sección del pie de pagina">⬇️ Pie de Página</a>
 
@@ -106,8 +109,7 @@
     <a href="#formulario-publicidad" class="button button1"
         aria-label="Ir a completar el formulario para anunciarse aquí"
         title="Ir a completar el formulario para anunciarse aquí"
-        style="text-align: center;color: var(--gris-claro); text-decoration: none;"
-        onclick="trackEvent(this, 'click_anunciar_aqui', 'anunciantes', 'click', 'Botón Anunciar Aquí')">
+        style="text-align: center;color: var(--gris-claro); text-decoration: none;">
         📣 ¿Ofrecés servicios de electricidad?<br>
         ¡Anunciá aquí!<br> 
     </a>
@@ -124,30 +126,30 @@
     <ul>
 
         <li>
-            <a href="index.html" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'index')">🗺️ Electricistas en Argentina</a>
+            <a href="index.html">🗺️ Electricistas en Argentina</a>
         </li>
         <li>
-            <a href="#encontrar_proveedor" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Encontrar proveedor')">🔍 Encontrar Electricistas</a>
+            <a onclick="mostrarModalBuscarProveedor()">🔍 Encontrar Electricistas</a>
         </li>
         <li>
-            <a href="terminos-y-condiciones.html" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Términos y Condiciones')">📋 Términos y Condiciones</a>
+            <a href="terminos-y-condiciones.html">📋 Términos y Condiciones</a>
         </li>
 
-        <li><a href="#stats-widget" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Estadísticas')">📊 Estadísticas</a></li>
     </ul>
     
 
     
-    <ul style="background-color: var(--rojo);">
 
+    
+    <ul style="background-color: var(--estado);">
         <li>
-            <a href="#" style="color: var(--gris-claro);" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Top')">⬆️ Top</a>
+            <a href="#" style="color: var(--gris-claro);">⬆️ Top</a>
         </li>
         <li>
-            <a href="#contacto" style="color: var(--gris-claro);" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Contacto')">📞 Contacto</a>
+            <a href="#contacto" style="color: var(--gris-claro);">📞 Contacto</a>
         </li>
         <li>
-            <a href="#servicios" style="color: var(--gris-claro);" onclick="trackEvent(this, 'click_menu', 'navegacion', 'click', 'Servicios')">🧰 Servicios</a>
+            <a href="#servicios" style="color: var(--gris-claro);">🧰 Servicios</a>
         </li>
     </ul>
 </nav>
@@ -155,13 +157,18 @@
     <header>
         <div class="contenedor">
             <div id="contenido-principal">
-                <p style="font-size: 1.25em;text-align: left;padding: 1em;">Inicio del Espacio Publicitario</p>
 
                 <h1>¿Busca un electricista en provincia de entre ríos?</h1>
 
-                <p>Electricistas matriculados disponibles en toda la provincia de entre ríos. Servicio rápido, seguro y disponible las 24 horas. Instalaciones, reparaciones y urgencias eléctricas.</p>
+                <p>Electricistas matriculados disponibles en toda la provincia de entre ríos. Servicio rápido, seguro y disponible las 24 horas. Instalaciones, reparaciones y
+                    urgencias eléctricas.</p>
 
-                <p>Aceptamos los siguientes medios de pago:<br> efectivo, transferencias</p>
+                <p>
+                    Aceptamos los siguientes medios de pago:
+                    efectivo, transferencias
+                </p>
+
+
             </div>
 
 
@@ -283,7 +290,6 @@
 
 
 
-
 <div class="scroll-section" id="contacto">
 
         <h3>Contacto</h3>
@@ -299,8 +305,7 @@
     </a>
 
     <a class="button button1"
-        href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.electricista.net.ar/entre-rios.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20electricista%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%5CnEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%5Cn-%20cerrajero.net.ar%0A-%20plomero.net.ar%5Cn%5CnSi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
-        onclick="trackDynamicWhatsAppClick(this)"
+        href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.electricista.net.ar/entre-rios.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20electricista%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20auspicia%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20plomero.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
         target="_blank"
         rel="noopener noreferrer nofollow"
         aria-label="Enviar un WhatsApp"
@@ -319,7 +324,7 @@
         * Los botones de contacto son una demo, no hay un proveedor de servicios en este espacio publicitario.
 </p>
 
-
+        <div class="mapa-container">
         <iframe class="responsive-iframe"
             title="Mapa de argentina."
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26290430.240346003!2d-84.9416501488576!3d-36.450764058612755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses!2sar!4v1743374176678!5m2!1ses!2sar"
@@ -328,6 +333,11 @@
             allowfullscreen loading="lazy">
         </iframe>
 
+<a class="mapa-overlay" href="https://www.google.com/maps/search/?api=1&query=Argentina" target="_blank" rel="noopener noreferrer nofollow" aria-label="Abrir ejemplo en Google Maps" title="Abrir ejemplo en Google Maps"></a>
+<a class="button button1 btn-mapa" href="https://www.google.com/maps/search/?api=1&query=Argentina" target="_blank" rel="noopener noreferrer nofollow">
+    <i class="fa fa-map-marker"></i> Abrir ejemplo en Google Maps
+</a>
+        </div>
 
 </div>
         </div>
@@ -339,7 +349,9 @@
             <div class="scroll-section" id="servicios">
                 <h2>¿Necesita un servicio de electricidad confiable cerca de entre ríos?</h2>
 
-                <p>En nuestra empresa de electricidad en entre ríos, ofrecemos soluciones profesionales y seguras para resolver cualquier problema eléctrico en hogares, comercios y obras.</p>
+                <p>En nuestra empresa de electricidad en entre ríos, ofrecemos
+                    soluciones profesionales y seguras para resolver cualquier problema eléctrico en hogares, comercios
+                    y obras.</p>
 
 
 
@@ -378,7 +390,6 @@
                     <a class="button button1"
     href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.electricista.net.ar/entre-rios.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20electricista%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20an%C3%BAnciate%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20plomero.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
     data-servicio="Consultar por Instalaciones eléctricas"
-    onclick="trackDynamicWhatsAppClick(this)"
     aria-label="Consultar sobre el servicio por whatsapp"
     title="Consultar sobre el servicio por whatsapp"
     target="_blank"
@@ -397,7 +408,6 @@
                     <a class="button button1"
     href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.electricista.net.ar/entre-rios.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20electricista%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20an%C3%BAnciate%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20plomero.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
     data-servicio="Consultar por Reparaciones eléctricas"
-    onclick="trackDynamicWhatsAppClick(this)"
     aria-label="Consultar sobre el servicio por whatsapp"
     title="Consultar sobre el servicio por whatsapp"
     target="_blank"
@@ -416,7 +426,6 @@
                     <a class="button button1"
     href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.electricista.net.ar/entre-rios.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20electricista%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20an%C3%BAnciate%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20plomero.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
     data-servicio="Consultar por Cambio de térmicas y disyuntores"
-    onclick="trackDynamicWhatsAppClick(this)"
     aria-label="Consultar sobre el servicio por whatsapp"
     title="Consultar sobre el servicio por whatsapp"
     target="_blank"
@@ -435,7 +444,6 @@
                     <a class="button button1"
     href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.electricista.net.ar/entre-rios.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20electricista%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20an%C3%BAnciate%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20plomero.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
     data-servicio="Consultar por Colocación de tomas y llaves"
-    onclick="trackDynamicWhatsAppClick(this)"
     aria-label="Consultar sobre el servicio por whatsapp"
     title="Consultar sobre el servicio por whatsapp"
     target="_blank"
@@ -454,7 +462,6 @@
                     <a class="button button1"
     href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.electricista.net.ar/entre-rios.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20electricista%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20an%C3%BAnciate%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20plomero.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
     data-servicio="Consultar por Instalación de luminarias"
-    onclick="trackDynamicWhatsAppClick(this)"
     aria-label="Consultar sobre el servicio por whatsapp"
     title="Consultar sobre el servicio por whatsapp"
     target="_blank"
@@ -473,7 +480,6 @@
                     <a class="button button1"
     href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.electricista.net.ar/entre-rios.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20electricista%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20an%C3%BAnciate%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20plomero.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
     data-servicio="Consultar por Colocación de ventiladores de techo"
-    onclick="trackDynamicWhatsAppClick(this)"
     aria-label="Consultar sobre el servicio por whatsapp"
     title="Consultar sobre el servicio por whatsapp"
     target="_blank"
@@ -492,7 +498,6 @@
                     <a class="button button1"
     href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.electricista.net.ar/entre-rios.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20electricista%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20an%C3%BAnciate%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20plomero.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
     data-servicio="Consultar por Cableado nuevo o recambio"
-    onclick="trackDynamicWhatsAppClick(this)"
     aria-label="Consultar sobre el servicio por whatsapp"
     title="Consultar sobre el servicio por whatsapp"
     target="_blank"
@@ -511,7 +516,6 @@
                     <a class="button button1"
     href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.electricista.net.ar/entre-rios.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20electricista%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20an%C3%BAnciate%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20plomero.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
     data-servicio="Consultar por Tableros eléctricos"
-    onclick="trackDynamicWhatsAppClick(this)"
     aria-label="Consultar sobre el servicio por whatsapp"
     title="Consultar sobre el servicio por whatsapp"
     target="_blank"
@@ -530,7 +534,6 @@
                     <a class="button button1"
     href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.electricista.net.ar/entre-rios.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20electricista%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20an%C3%BAnciate%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20plomero.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
     data-servicio="Consultar por Electricista para comercios"
-    onclick="trackDynamicWhatsAppClick(this)"
     aria-label="Consultar sobre el servicio por whatsapp"
     title="Consultar sobre el servicio por whatsapp"
     target="_blank"
@@ -549,7 +552,6 @@
                     <a class="button button1"
     href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.electricista.net.ar/entre-rios.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20electricista%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20an%C3%BAnciate%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20plomero.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
     data-servicio="Consultar por Electricista industrial"
-    onclick="trackDynamicWhatsAppClick(this)"
     aria-label="Consultar sobre el servicio por whatsapp"
     title="Consultar sobre el servicio por whatsapp"
     target="_blank"
@@ -568,7 +570,6 @@
                     <a class="button button1"
     href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.electricista.net.ar/entre-rios.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20electricista%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20an%C3%BAnciate%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20plomero.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
     data-servicio="Consultar por Certificados eléctricos"
-    onclick="trackDynamicWhatsAppClick(this)"
     aria-label="Consultar sobre el servicio por whatsapp"
     title="Consultar sobre el servicio por whatsapp"
     target="_blank"
@@ -587,7 +588,6 @@
                     <a class="button button1"
     href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.electricista.net.ar/entre-rios.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20electricista%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20an%C3%BAnciate%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20plomero.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
     data-servicio="Consultar por Puesta a tierra"
-    onclick="trackDynamicWhatsAppClick(this)"
     aria-label="Consultar sobre el servicio por whatsapp"
     title="Consultar sobre el servicio por whatsapp"
     target="_blank"
@@ -606,7 +606,6 @@
                     <a class="button button1"
     href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.electricista.net.ar/entre-rios.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20electricista%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20an%C3%BAnciate%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20plomero.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
     data-servicio="Consultar por Iluminación exterior y de seguridad"
-    onclick="trackDynamicWhatsAppClick(this)"
     aria-label="Consultar sobre el servicio por whatsapp"
     title="Consultar sobre el servicio por whatsapp"
     target="_blank"
@@ -625,7 +624,6 @@
                     <a class="button button1"
     href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.electricista.net.ar/entre-rios.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20electricista%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20an%C3%BAnciate%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20plomero.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
     data-servicio="Consultar por Instalación de UPS y grupos electrógenos"
-    onclick="trackDynamicWhatsAppClick(this)"
     aria-label="Consultar sobre el servicio por whatsapp"
     title="Consultar sobre el servicio por whatsapp"
     target="_blank"
@@ -644,7 +642,6 @@
                     <a class="button button1"
     href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.electricista.net.ar/entre-rios.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20electricista%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20an%C3%BAnciate%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20plomero.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
     data-servicio="Consultar por Mantenimiento preventivo"
-    onclick="trackDynamicWhatsAppClick(this)"
     aria-label="Consultar sobre el servicio por whatsapp"
     title="Consultar sobre el servicio por whatsapp"
     target="_blank"
@@ -663,7 +660,6 @@
                     <a class="button button1"
     href="https://wa.me/+5491122413762?text=Hola%2C%20bienvenido/a%21%F0%9F%91%8B%20Seguro%20vienes%20de%20https%3A//www.electricista.net.ar/entre-rios.html%20%F0%9F%94%A7%F0%9F%A7%B0%E2%9A%A1%0APronto%20habr%C3%A1%20un%20electricista%20disponible%20aqu%C3%AD.%0ASi%20conoces%20a%20alguien%20en%20el%20rubro%2C%20recomi%C3%A9ndales%20este%20sitio.%0A%C2%A1Estamos%20buscando%20nuevos%20anunciantes%21%20%C2%A1Gracias%21%20%F0%9F%99%8C%F0%9F%93%A2%0A%0A%2AServicios%20Web%3A%2A%0AEncuentra%20un%20profesional%20o%20an%C3%BAnciate%20en%20nuestros%20otros%20sitios%3A%0A-%20cerrajero.net.ar%0A-%20plomero.net.ar%0A%0ASi%20tienes%20alguna%20sugerencia%20o%20comentario%2C%20%C2%A1ser%C3%A1%20muy%20bienvenido%21%20%F0%9F%98%8A"
     data-servicio="Consultar por Urgencias eléctricas 24hs"
-    onclick="trackDynamicWhatsAppClick(this)"
     aria-label="Consultar sobre el servicio por whatsapp"
     title="Consultar sobre el servicio por whatsapp"
     target="_blank"
@@ -678,716 +674,7 @@
 
 </div>            </div>
 
-            <p style="font-size: 1.25em;text-align: right; padding: 1em;">Fin del Espacio Publicitario</p>
 
-
-            <div id="opciones" style="background-color: var(--rojo);">
-
-            
-
-                <div class="scroll-section" id="encontrar_proveedor">
-<section id="busqueda-por-ubicacion" class="contenedor"
-    style="width: 90%;padding: 2em;background: var(--gris-claro);color: var(--texto);margin: 1em auto;">
-    <h2>📍 Buscar  electricista  por geolocalización</h2>
-
-    <p>Escribe una distancia máxima para mostrar resultados y si hay proveedores aparecerán del más cercano al más lejano</p>
-
-    <label>
-        Distancia máxima (km):
-        <input type="number" id="umbral-km" value="50" step="0.1" min="0" style="width: 100%; text-align: center;">
-    </label>
-
-    <br><br>
-    <button
-        onclick="buscarPorUbicacion(); trackEvent(this, 'click_buscar_proveedor_geolocalizacion', 'buscar proveedor geolocalización', 'click', 'buscar proveedor de servicios')"
-        class="button button1">🔍 Buscar
-        proveedor de servicios</button>
-        
-    <p style="font-size: 1.25em;text-align: center;text-align: right; padding: 1em;">Al usar el buscador confirmas que
-        has
-        leído y aceptas <a href="                    terminos-y-condiciones.html
-">
-            Términos y Condiciones
-        </a>.</p>
-
-</section>                </div>
-                <h2>Encuentre un Electricista en las localidades de la provincia de entre ríos, Argentina.</h2>
-
-                <p>Los botones en <span style="color: darkred;font-size: 1.2em;">Rojo</span> indican que no hay un electricista disponible.</p>
-                <p>Los botones en <span style="color: darkgreen;font-size: 1.2em;">Verde</span> indican que sí hay un electricista disponible.</p>
-
-<select id="localidades" onchange="window.location.href=this.value;" class="button button2" style="width:80%;">
-<option value="">Seleccione una opción</option>
-
-
-<option value="entre-rios/arroyo-baru.html" style="color: darkred;">
-    ✘ | arroyo barú
-</option>
-
-<option value="entre-rios/colon.html" style="color: darkred;">
-    ✘ | colón
-</option>
-
-<option value="entre-rios/colonia-hugues.html" style="color: darkred;">
-    ✘ | colonia hugues
-</option>
-
-<option value="entre-rios/hambis.html" style="color: darkred;">
-    ✘ | hambis
-</option>
-
-<option value="entre-rios/hocker.html" style="color: darkred;">
-    ✘ | hocker
-</option>
-
-<option value="entre-rios/la-clarita.html" style="color: darkred;">
-    ✘ | la clarita
-</option>
-
-<option value="entre-rios/pueblo-cazes.html" style="color: darkred;">
-    ✘ | pueblo cazes
-</option>
-
-<option value="entre-rios/pueblo-liebig-s.html" style="color: darkred;">
-    ✘ | pueblo liebig's
-</option>
-
-<option value="entre-rios/san-jose.html" style="color: darkred;">
-    ✘ | san josé
-</option>
-
-<option value="entre-rios/ubajay.html" style="color: darkred;">
-    ✘ | ubajay
-</option>
-
-<option value="entre-rios/villa-elisa.html" style="color: darkred;">
-    ✘ | villa elisa
-</option>
-
-<option value="entre-rios/calabacilla.html" style="color: darkred;">
-    ✘ | calabacilla
-</option>
-
-<option value="entre-rios/clodomiro-ledesma.html" style="color: darkred;">
-    ✘ | clodomiro ledesma
-</option>
-
-<option value="entre-rios/colonia-ayui.html" style="color: darkred;">
-    ✘ | colonia ayuí
-</option>
-
-<option value="entre-rios/colonia-general-roca.html" style="color: darkred;">
-    ✘ | colonia general roca
-</option>
-
-<option value="entre-rios/concordia.html" style="color: darkred;">
-    ✘ | concordia
-</option>
-
-<option value="entre-rios/estacion-yerua.html" style="color: darkred;">
-    ✘ | estación yeruá
-</option>
-
-<option value="entre-rios/estacion-yuqueri.html" style="color: darkred;">
-    ✘ | estación yuquerí
-</option>
-
-<option value="entre-rios/estancia-grande.html" style="color: darkred;">
-    ✘ | estancia grande
-</option>
-
-<option value="entre-rios/la-criolla.html" style="color: darkred;">
-    ✘ | la criolla
-</option>
-
-<option value="entre-rios/los-charruas.html" style="color: darkred;">
-    ✘ | los charrúas
-</option>
-
-<option value="entre-rios/nueva-escocia.html" style="color: darkred;">
-    ✘ | nueva escocia
-</option>
-
-<option value="entre-rios/pedernal.html" style="color: darkred;">
-    ✘ | pedernal
-</option>
-
-<option value="entre-rios/puerto-yerua.html" style="color: darkred;">
-    ✘ | puerto yeruá
-</option>
-
-<option value="entre-rios/aldea-brasilera.html" style="color: darkred;">
-    ✘ | aldea brasilera
-</option>
-
-<option value="entre-rios/aldea-grapschental.html" style="color: darkred;">
-    ✘ | aldea grapschental
-</option>
-
-<option value="entre-rios/aldea-protestante.html" style="color: darkred;">
-    ✘ | aldea protestante
-</option>
-
-<option value="entre-rios/aldea-salto.html" style="color: darkred;">
-    ✘ | aldea salto
-</option>
-
-<option value="entre-rios/aldea-san-francisco.html" style="color: darkred;">
-    ✘ | aldea san francisco
-</option>
-
-<option value="entre-rios/aldea-spatzenkutter.html" style="color: darkred;">
-    ✘ | aldea spatzenkutter
-</option>
-
-<option value="entre-rios/aldea-valle-maria.html" style="color: darkred;">
-    ✘ | aldea valle maría
-</option>
-
-<option value="entre-rios/colonia-ensayo.html" style="color: darkred;">
-    ✘ | colonia ensayo
-</option>
-
-<option value="entre-rios/diamante.html" style="color: darkred;">
-    ✘ | diamante
-</option>
-
-<option value="entre-rios/estacion-camps.html" style="color: darkred;">
-    ✘ | estación camps
-</option>
-
-<option value="entre-rios/general-alvear.html" style="color: darkred;">
-    ✘ | general alvear
-</option>
-
-<option value="entre-rios/general-racedo-el-carmen.html" style="color: darkred;">
-    ✘ | general racedo (el carmen)
-</option>
-
-<option value="entre-rios/general-ramirez.html" style="color: darkred;">
-    ✘ | general ramírez
-</option>
-
-<option value="entre-rios/la-juanita.html" style="color: darkred;">
-    ✘ | la juanita
-</option>
-
-<option value="entre-rios/las-jaulas.html" style="color: darkred;">
-    ✘ | las jaulas
-</option>
-
-<option value="entre-rios/paraje-la-virgen.html" style="color: darkred;">
-    ✘ | paraje la virgen
-</option>
-
-<option value="entre-rios/puerto-las-cuevas.html" style="color: darkred;">
-    ✘ | puerto las cuevas
-</option>
-
-<option value="entre-rios/villa-libertador-san-martin.html" style="color: darkred;">
-    ✘ | villa libertador san martín
-</option>
-
-<option value="entre-rios/chajari.html" style="color: darkred;">
-    ✘ | chajarí
-</option>
-
-<option value="entre-rios/colonia-alemana.html" style="color: darkred;">
-    ✘ | colonia alemana
-</option>
-
-<option value="entre-rios/colonia-pena.html" style="color: darkred;">
-    ✘ | colonia peña
-</option>
-
-<option value="entre-rios/federacion.html" style="color: darkred;">
-    ✘ | federación
-</option>
-
-<option value="entre-rios/los-conquistadores.html" style="color: darkred;">
-    ✘ | los conquistadores
-</option>
-
-<option value="entre-rios/san-jaime-de-la-frontera.html" style="color: darkred;">
-    ✘ | san jaime de la frontera
-</option>
-
-<option value="entre-rios/san-pedro.html" style="color: darkred;">
-    ✘ | san pedro
-</option>
-
-<option value="entre-rios/san-ramon.html" style="color: darkred;">
-    ✘ | san ramón
-</option>
-
-<option value="entre-rios/santa-ana.html" style="color: darkred;">
-    ✘ | santa ana
-</option>
-
-<option value="entre-rios/villa-del-rosario.html" style="color: darkred;">
-    ✘ | villa del rosario
-</option>
-
-<option value="entre-rios/conscripto-bernardi.html" style="color: darkred;">
-    ✘ | conscripto bernardi
-</option>
-
-<option value="entre-rios/aldea-san-isidro-el-cimarron.html" style="color: darkred;">
-    ✘ | aldea san isidro (el cimarrón)
-</option>
-
-<option value="entre-rios/federal.html" style="color: darkred;">
-    ✘ | federal
-</option>
-
-<option value="entre-rios/nueva-vizcaya.html" style="color: darkred;">
-    ✘ | nueva vizcaya
-</option>
-
-<option value="entre-rios/sauce-de-luna.html" style="color: darkred;">
-    ✘ | sauce de luna
-</option>
-
-<option value="entre-rios/san-jose-de-feliciano.html" style="color: darkred;">
-    ✘ | san josé de feliciano
-</option>
-
-<option value="entre-rios/san-victor.html" style="color: darkred;">
-    ✘ | san víctor
-</option>
-
-<option value="entre-rios/aldea-asuncion.html" style="color: darkred;">
-    ✘ | aldea asunción
-</option>
-
-<option value="entre-rios/estacion-lazo.html" style="color: darkred;">
-    ✘ | estación lazo
-</option>
-
-<option value="entre-rios/general-galarza.html" style="color: darkred;">
-    ✘ | general galarza
-</option>
-
-<option value="entre-rios/gualeguay.html" style="color: darkred;">
-    ✘ | gualeguay
-</option>
-
-<option value="entre-rios/puerto-ruiz.html" style="color: darkred;">
-    ✘ | puerto ruiz
-</option>
-
-<option value="entre-rios/aldea-san-antonio.html" style="color: darkred;">
-    ✘ | aldea san antonio
-</option>
-
-<option value="entre-rios/aldea-san-juan.html" style="color: darkred;">
-    ✘ | aldea san juan
-</option>
-
-<option value="entre-rios/enrique-carbo.html" style="color: darkred;">
-    ✘ | enrique carbó
-</option>
-
-<option value="entre-rios/estacion-escrina.html" style="color: darkred;">
-    ✘ | estación escriña
-</option>
-
-<option value="entre-rios/faustino-m-parera.html" style="color: darkred;">
-    ✘ | faustino m. parera
-</option>
-
-<option value="entre-rios/general-almada.html" style="color: darkred;">
-    ✘ | general almada
-</option>
-
-<option value="entre-rios/gilbert.html" style="color: darkred;">
-    ✘ | gilbert
-</option>
-
-<option value="entre-rios/gualeguaychu.html" style="color: darkred;">
-    ✘ | gualeguaychú
-</option>
-
-<option value="entre-rios/irazusta.html" style="color: darkred;">
-    ✘ | irazusta
-</option>
-
-<option value="entre-rios/larroque.html" style="color: darkred;">
-    ✘ | larroque
-</option>
-
-<option value="entre-rios/pastor-britos.html" style="color: darkred;">
-    ✘ | pastor britos
-</option>
-
-<option value="entre-rios/pueblo-general-belgrano.html" style="color: darkred;">
-    ✘ | pueblo general belgrano
-</option>
-
-<option value="entre-rios/urdinarrain.html" style="color: darkred;">
-    ✘ | urdinarrain
-</option>
-
-<option value="entre-rios/ceibas.html" style="color: darkred;">
-    ✘ | ceibas
-</option>
-
-<option value="entre-rios/ibicuy.html" style="color: darkred;">
-    ✘ | ibicuy
-</option>
-
-<option value="entre-rios/medanos.html" style="color: darkred;">
-    ✘ | médanos
-</option>
-
-<option value="entre-rios/villa-paranacito.html" style="color: darkred;">
-    ✘ | villa paranacito
-</option>
-
-<option value="entre-rios/alcaraz.html" style="color: darkred;">
-    ✘ | alcaraz
-</option>
-
-<option value="entre-rios/bovril.html" style="color: darkred;">
-    ✘ | bovril
-</option>
-
-<option value="entre-rios/colonia-avigdor.html" style="color: darkred;">
-    ✘ | colonia avigdor
-</option>
-
-<option value="entre-rios/el-solar.html" style="color: darkred;">
-    ✘ | el solar
-</option>
-
-<option value="entre-rios/la-paz.html" style="color: darkred;">
-    ✘ | la paz
-</option>
-
-<option value="entre-rios/piedras-blancas.html" style="color: darkred;">
-    ✘ | piedras blancas
-</option>
-
-<option value="entre-rios/san-gustavo.html" style="color: darkred;">
-    ✘ | san gustavo
-</option>
-
-<option value="entre-rios/santa-elena.html" style="color: darkred;">
-    ✘ | santa elena
-</option>
-
-<option value="entre-rios/sir-leonard.html" style="color: darkred;">
-    ✘ | sir leonard
-</option>
-
-<option value="entre-rios/aranguren.html" style="color: darkred;">
-    ✘ | aranguren
-</option>
-
-<option value="entre-rios/betbeder.html" style="color: darkred;">
-    ✘ | betbeder
-</option>
-
-<option value="entre-rios/don-cristobal.html" style="color: darkred;">
-    ✘ | don cristóbal
-</option>
-
-<option value="entre-rios/febre.html" style="color: darkred;">
-    ✘ | febré
-</option>
-
-<option value="entre-rios/hernandez.html" style="color: darkred;">
-    ✘ | hernández
-</option>
-
-<option value="entre-rios/lucas-gonzalez.html" style="color: darkred;">
-    ✘ | lucas gonzález
-</option>
-
-<option value="entre-rios/nogoya.html" style="color: darkred;">
-    ✘ | nogoyá
-</option>
-
-<option value="entre-rios/xx-de-setiembre.html" style="color: darkred;">
-    ✘ | xx de setiembre
-</option>
-
-<option value="entre-rios/aldea-maria-luisa.html" style="color: darkred;">
-    ✘ | aldea maría luisa
-</option>
-
-<option value="entre-rios/aldea-san-rafael.html" style="color: darkred;">
-    ✘ | aldea san rafael
-</option>
-
-<option value="entre-rios/aldea-santa-maria.html" style="color: darkred;">
-    ✘ | aldea santa maría
-</option>
-
-<option value="entre-rios/aldea-santa-rosa.html" style="color: darkred;">
-    ✘ | aldea santa rosa
-</option>
-
-<option value="entre-rios/cerrito.html" style="color: darkred;">
-    ✘ | cerrito
-</option>
-
-<option value="entre-rios/colonia-avellaneda.html" style="color: darkred;">
-    ✘ | colonia avellaneda
-</option>
-
-<option value="entre-rios/colonia-crespo.html" style="color: darkred;">
-    ✘ | colonia crespo
-</option>
-
-<option value="entre-rios/crespo.html" style="color: darkred;">
-    ✘ | crespo
-</option>
-
-<option value="entre-rios/el-palenque.html" style="color: darkred;">
-    ✘ | el palenque
-</option>
-
-<option value="entre-rios/el-pingo.html" style="color: darkred;">
-    ✘ | el pingo
-</option>
-
-<option value="entre-rios/el-ramblon.html" style="color: darkred;">
-    ✘ | el ramblón
-</option>
-
-<option value="entre-rios/hasenkamp.html" style="color: darkred;">
-    ✘ | hasenkamp
-</option>
-
-<option value="entre-rios/hernandarias.html" style="color: darkred;">
-    ✘ | hernandarias
-</option>
-
-<option value="entre-rios/la-picada.html" style="color: darkred;">
-    ✘ | la picada
-</option>
-
-<option value="entre-rios/las-tunas.html" style="color: darkred;">
-    ✘ | las tunas
-</option>
-
-<option value="entre-rios/maria-grande.html" style="color: darkred;">
-    ✘ | maría grande
-</option>
-
-<option value="entre-rios/oro-verde.html" style="color: darkred;">
-    ✘ | oro verde
-</option>
-
-<option value="entre-rios/parana.html" style="color: darkred;">
-    ✘ | paraná
-</option>
-
-<option value="entre-rios/pueblo-bellocq-las-garzas.html" style="color: darkred;">
-    ✘ | pueblo bellocq (las garzas)
-</option>
-
-<option value="entre-rios/pueblo-brugo.html" style="color: darkred;">
-    ✘ | pueblo brugo
-</option>
-
-<option value="entre-rios/pueblo-general-san-martin.html" style="color: darkred;">
-    ✘ | pueblo general san martín
-</option>
-
-<option value="entre-rios/san-benito.html" style="color: darkred;">
-    ✘ | san benito
-</option>
-
-<option value="entre-rios/sauce-montrull.html" style="color: darkred;">
-    ✘ | sauce montrull
-</option>
-
-<option value="entre-rios/sauce-pinto.html" style="color: darkred;">
-    ✘ | sauce pinto
-</option>
-
-<option value="entre-rios/segui.html" style="color: darkred;">
-    ✘ | seguí
-</option>
-
-<option value="entre-rios/sosa.html" style="color: darkred;">
-    ✘ | sosa
-</option>
-
-<option value="entre-rios/tabossi.html" style="color: darkred;">
-    ✘ | tabossi
-</option>
-
-<option value="entre-rios/tezanos-pinto.html" style="color: darkred;">
-    ✘ | tezanos pinto
-</option>
-
-<option value="entre-rios/viale.html" style="color: darkred;">
-    ✘ | viale
-</option>
-
-<option value="entre-rios/villa-fontana.html" style="color: darkred;">
-    ✘ | villa fontana
-</option>
-
-<option value="entre-rios/villa-gdor-luis-f-etchevehere.html" style="color: darkred;">
-    ✘ | villa gdor. luis f. etchevehere
-</option>
-
-<option value="entre-rios/villa-urquiza.html" style="color: darkred;">
-    ✘ | villa urquiza
-</option>
-
-<option value="entre-rios/general-campos.html" style="color: darkred;">
-    ✘ | general campos
-</option>
-
-<option value="entre-rios/san-salvador.html" style="color: darkred;">
-    ✘ | san salvador
-</option>
-
-<option value="entre-rios/altamirano-sur.html" style="color: darkred;">
-    ✘ | altamirano sur
-</option>
-
-<option value="entre-rios/durazno.html" style="color: darkred;">
-    ✘ | durazno
-</option>
-
-<option value="entre-rios/estacion-arroyo-cle.html" style="color: darkred;">
-    ✘ | estación arroyo clé
-</option>
-
-<option value="entre-rios/gobernador-echague.html" style="color: darkred;">
-    ✘ | gobernador echagüe
-</option>
-
-<option value="entre-rios/gobernador-mansilla.html" style="color: darkred;">
-    ✘ | gobernador mansilla
-</option>
-
-<option value="entre-rios/gobernador-sola.html" style="color: darkred;">
-    ✘ | gobernador solá
-</option>
-
-<option value="entre-rios/guardamonte.html" style="color: darkred;">
-    ✘ | guardamonte
-</option>
-
-<option value="entre-rios/las-guachas.html" style="color: darkred;">
-    ✘ | las guachas
-</option>
-
-<option value="entre-rios/macia.html" style="color: darkred;">
-    ✘ | maciá
-</option>
-
-<option value="entre-rios/rosario-del-tala.html" style="color: darkred;">
-    ✘ | rosario del tala
-</option>
-
-<option value="entre-rios/basavilbaso.html" style="color: darkred;">
-    ✘ | basavilbaso
-</option>
-
-<option value="entre-rios/caseros.html" style="color: darkred;">
-    ✘ | caseros
-</option>
-
-<option value="entre-rios/colonia-elia.html" style="color: darkred;">
-    ✘ | colonia elía
-</option>
-
-<option value="entre-rios/concepcion-del-uruguay.html" style="color: darkred;">
-    ✘ | concepción del uruguay
-</option>
-
-<option value="entre-rios/herrera.html" style="color: darkred;">
-    ✘ | herrera
-</option>
-
-<option value="entre-rios/las-moscas.html" style="color: darkred;">
-    ✘ | las moscas
-</option>
-
-<option value="entre-rios/libaros.html" style="color: darkred;">
-    ✘ | líbaros
-</option>
-
-<option value="entre-rios/1o-de-mayo.html" style="color: darkred;">
-    ✘ | 1º de mayo
-</option>
-
-<option value="entre-rios/pronunciamiento.html" style="color: darkred;">
-    ✘ | pronunciamiento
-</option>
-
-<option value="entre-rios/rocamora.html" style="color: darkred;">
-    ✘ | rocamora
-</option>
-
-<option value="entre-rios/santa-anita.html" style="color: darkred;">
-    ✘ | santa anita
-</option>
-
-<option value="entre-rios/villa-mantero.html" style="color: darkred;">
-    ✘ | villa mantero
-</option>
-
-<option value="entre-rios/villa-san-justo.html" style="color: darkred;">
-    ✘ | villa san justo
-</option>
-
-<option value="entre-rios/villa-san-marcial-est-gobernador-urquiza.html" style="color: darkred;">
-    ✘ | villa san marcial (est. gobernador urquiza)
-</option>
-
-<option value="entre-rios/antelo.html" style="color: darkred;">
-    ✘ | antelo
-</option>
-
-<option value="entre-rios/molino-doll.html" style="color: darkred;">
-    ✘ | molino doll
-</option>
-
-<option value="entre-rios/victoria.html" style="color: darkred;">
-    ✘ | victoria
-</option>
-
-<option value="entre-rios/estacion-raices.html" style="color: darkred;">
-    ✘ | estación raíces
-</option>
-
-<option value="entre-rios/ingeniero-miguel-sajaroff.html" style="color: darkred;">
-    ✘ | ingeniero miguel sajaroff
-</option>
-
-<option value="entre-rios/jubileo.html" style="color: darkred;">
-    ✘ | jubileo
-</option>
-
-<option value="entre-rios/paso-de-la-laguna.html" style="color: darkred;">
-    ✘ | paso de la laguna
-</option>
-
-<option value="entre-rios/villa-clara.html" style="color: darkred;">
-    ✘ | villa clara
-</option>
-
-<option value="entre-rios/villa-dominguez.html" style="color: darkred;">
-    ✘ | villa domínguez
-</option>
-
-<option value="entre-rios/villaguay.html" style="color: darkred;">
-    ✘ | villaguay
-</option>
-
-
-</select>
-
-            </div>
 
 
 
@@ -1398,7 +685,7 @@
                 <span class="form-badge">📣 Espacio disponible</span>
                 <h3>Formulario para publicitar aquí</h3>
                 <p>Este espacio publicitario se encuentra sin un proveedor de servicios.<br>
-                    ¿Ofrecés servicios de electricidad? <strong>¡Este espacio está disponible, anunciate aquí!</strong>
+                    ¿Ofrecés servicios de electricidad?? <strong>¡Este espacio está disponible, anunciate aquí!</strong>
                 </p>
 
                 <form id="whatsapp-form" novalidate>
@@ -2201,7 +1488,204 @@
                             renderPhotos(photoSrcs);
                         }
                     </script>
+
                     <!-- ══ INFORMACIÓN ADICIONAL ══ -->
+                     <!-- ══ SERVICIOS ══ -->
+<p class="form-section-title">Servicios que ofrecés</p>
+<p class="field-hint" style="margin-bottom:10px;">
+    Editá el título o la descripción, eliminá los que no ofrezcas o agregá nuevos.
+    Los que no toques quedan como en la plantilla.
+</p>
+
+<div id="services-editor"></div>
+
+<button type="button" id="add-service-btn" class="button button-secondary" style="margin-top:10px;">
+    ➕ Agregar otro servicio
+</button>
+
+<style>
+    .svc-card { border:2px solid #dee2e6; border-radius:10px; padding:10px; margin-bottom:10px; background:#f8f9fa; }
+    .svc-card.edited  { border-color:#007BFF; }
+    .svc-card.removed { border-color:#DC3545; opacity:.6; }
+    .svc-card.custom  { border-color:#28a745; }
+    .svc-card input[type="text"], .svc-card textarea { width:100%; box-sizing:border-box; margin-bottom:6px; }
+    .svc-card textarea { min-height:70px; resize:vertical; }
+    .svc-card.removed input, .svc-card.removed textarea { text-decoration:line-through; }
+    .svc-actions { display:flex; gap:6px; flex-wrap:wrap; }
+    .svc-badge { font-size:11px; font-weight:600; padding:2px 8px; border-radius:20px; color:#fff; display:inline-block; margin-bottom:6px; }
+    .svc-badge.edited  { background:#007BFF; }
+    .svc-badge.removed { background:#DC3545; }
+    .svc-badge.custom  { background:#28a745; }
+</style>
+
+<script>
+(function () {
+    const container = document.getElementById('services-editor');
+    let services = [];
+    let nextId = 0;
+
+    // Lee los servicios de la plantilla desde la propia página
+    function readTemplateServices() {
+        return Array.from(document.querySelectorAll('#servicios .service-box')).map(box => ({
+            title: box.querySelector('h3').textContent.trim(),
+            desc:  box.querySelector('p').textContent.trim()
+        }));
+    }
+
+    function init() {
+        services = readTemplateServices().map(s => ({
+            id: nextId++,
+            origTitle: s.title, origDesc: s.desc,
+            title: s.title,     desc: s.desc,
+            removed: false, custom: false
+        }));
+        render();
+    }
+
+    function isEdited(s) {
+        return !s.custom && (s.title.trim() !== s.origTitle || s.desc.trim() !== s.origDesc);
+    }
+
+    function persist() {
+        if (typeof saveFormData === 'function') saveFormData();
+    }
+
+    function el(tag, props, children) {
+        const e = document.createElement(tag);
+        Object.assign(e, props || {});
+        (children || []).forEach(c => e.appendChild(c));
+        return e;
+    }
+
+    function updateCardState(card, s) {
+        card.classList.toggle('removed', s.removed);
+        card.classList.toggle('custom', s.custom && !s.removed);
+        card.classList.toggle('edited', isEdited(s) && !s.removed);
+        const badge = card.querySelector('.svc-badge');
+        if (s.removed)          { badge.className = 'svc-badge removed'; badge.textContent = '🗑️ Se eliminará'; badge.style.display = ''; }
+        else if (s.custom)      { badge.className = 'svc-badge custom';  badge.textContent = '➕ Nuevo';         badge.style.display = ''; }
+        else if (isEdited(s))   { badge.className = 'svc-badge edited';  badge.textContent = '✏️ Editado';       badge.style.display = ''; }
+        else                    { badge.style.display = 'none'; }
+        card.querySelector('.btn-toggle').textContent = s.removed ? '↩️ Mantener' : '🗑️ Eliminar';
+        const restore = card.querySelector('.btn-restore');
+        if (restore) restore.style.display = isEdited(s) && !s.removed ? '' : 'none';
+    }
+
+    function buildCard(s) {
+        const card = el('div', { className: 'svc-card' });
+        const badge = el('span', { className: 'svc-badge' });
+
+        const titleInput = el('input', { type: 'text', value: s.title, placeholder: 'Título del servicio' });
+        titleInput.setAttribute('aria-label', 'Título del servicio');
+        const descInput = el('textarea', { value: s.desc, placeholder: 'Descripción del servicio' });
+        descInput.setAttribute('aria-label', 'Descripción del servicio');
+
+        titleInput.addEventListener('input', () => { s.title = titleInput.value; updateCardState(card, s); persist(); });
+        descInput.addEventListener('input',  () => { s.desc  = descInput.value;  updateCardState(card, s); persist(); });
+
+        const btnToggle = el('button', { type: 'button', className: 'btn-img-action btn-delete btn-toggle' });
+        btnToggle.addEventListener('click', () => {
+            if (s.custom) {                       // los nuevos se borran de verdad
+                services = services.filter(x => x.id !== s.id);
+                card.remove();
+            } else {
+                s.removed = !s.removed;
+                titleInput.disabled = descInput.disabled = s.removed;
+                updateCardState(card, s);
+            }
+            persist();
+        });
+
+        const actions = el('div', { className: 'svc-actions' }, [btnToggle]);
+
+        if (!s.custom) {
+            const btnRestore = el('button', { type: 'button', className: 'btn-img-action btn-edit btn-restore', textContent: '↺ Restaurar original' });
+            btnRestore.addEventListener('click', () => {
+                s.title = s.origTitle; s.desc = s.origDesc;
+                titleInput.value = s.title; descInput.value = s.desc;
+                updateCardState(card, s); persist();
+            });
+            actions.appendChild(btnRestore);
+        }
+
+        card.append(badge, titleInput, descInput, actions);
+        titleInput.disabled = descInput.disabled = s.removed;
+        updateCardState(card, s);
+        return card;
+    }
+
+    function render() {
+        container.innerHTML = '';
+        services.forEach(s => container.appendChild(buildCard(s)));
+    }
+
+    document.getElementById('add-service-btn').addEventListener('click', () => {
+        const s = { id: nextId++, origTitle: '', origDesc: '', title: '', desc: '', removed: false, custom: true };
+        services.push(s);
+        const card = buildCard(s);
+        container.appendChild(card);
+        card.querySelector('input').focus();
+        persist();
+    });
+
+    // ── API pública (la usa form.js) ──────────────────────────
+    window.getServicesState = function () {
+        return services.map(s => ({
+            origTitle: s.origTitle, title: s.title, desc: s.desc,
+            removed: s.removed, custom: s.custom
+        }));
+    };
+
+    window.setServicesState = function (saved) {
+        if (!Array.isArray(saved)) return;
+        saved.forEach(sv => {
+            if (sv.custom) {
+                services.push({ id: nextId++, origTitle: '', origDesc: '', title: sv.title, desc: sv.desc, removed: false, custom: true });
+            } else {
+                const s = services.find(x => x.origTitle === sv.origTitle);
+                if (s) { s.title = sv.title; s.desc = sv.desc; s.removed = !!sv.removed; }
+            }
+        });
+        render();
+    };
+
+    // Texto para el mensaje de WhatsApp / Messenger
+    window.getServicesSummary = function () {
+        const edited  = services.filter(s => !s.custom && !s.removed && isEdited(s));
+        const removed = services.filter(s => !s.custom && s.removed);
+        const added   = services.filter(s => s.custom && (s.title.trim() || s.desc.trim()));
+
+        if (!edited.length && !removed.length && !added.length) {
+            return '- Sin cambios (se usan los servicios de la plantilla)';
+        }
+
+        const lines = [];
+        if (edited.length) {
+            lines.push('✏️ EDITADOS:');
+            edited.forEach(s => {
+                lines.push(`  • Original: ${s.origTitle}`);
+                if (s.title.trim() !== s.origTitle) lines.push(`    Nuevo título: ${s.title.trim()}`);
+                if (s.desc.trim()  !== s.origDesc)  lines.push(`    Nueva descripción: ${s.desc.trim()}`);
+            });
+        }
+        if (removed.length) {
+            lines.push('🗑️ ELIMINAR:');
+            removed.forEach(s => lines.push(`  • ${s.origTitle}`));
+        }
+        if (added.length) {
+            lines.push('➕ NUEVOS:');
+            added.forEach(s => {
+                lines.push(`  • ${s.title.trim() || '(sin título)'}`);
+                if (s.desc.trim()) lines.push(`    ${s.desc.trim()}`);
+            });
+        }
+        lines.push('(El resto de los servicios queda igual que la plantilla)');
+        return lines.join('\n');
+    };
+
+    init();
+})();
+</script>
                     <p class="form-section-title">Información adicional</p>
 
                     <div class="form-group">
@@ -2215,7 +1699,8 @@
                         <input type="checkbox" id="terminos-form" name="terminos" required>
                         <label for="terminos-form">
                             Al enviar este formulario, confirmás que leíste y aceptás los
-                            <a href="terminos-y-condiciones.html" target="_blank">Términos y Condiciones</a>.
+                            <a href="                    terminos-y-condiciones.html
+">Términos y Condiciones</a>.
                         </label>
                     </div>
 
@@ -2225,11 +1710,11 @@
                             🗑️ Limpiar formulario
                         </button>
                         <button id="whatsapp-button" type="button" class="button button1"
-                            onclick="syncFormFields(); trackEvent(this, 'click_enviar_formulario_whatsapp', 'anunciantes', 'click_enviar_formulario_whatsapp', 'botón enviar formulario whatsapp')">
+                            onclick="syncFormFields()">
                             <i class="fa fa-whatsapp"></i> Enviar por WhatsApp
                         </button>
                         <button id="messenger-button" type="button" class="button button1"
-                            onclick="syncFormFields(); trackEvent(this, 'click_enviar_formulario_messenger', 'anunciantes', 'click_enviar_formulario_messenger', 'botón enviar formulario messenger')">
+                            onclick="syncFormFields()">
                             <i class="fa fa-commenting"></i> Enviar por Messenger
                         </button>
                     </div>
@@ -2237,27 +1722,6 @@
                 </form>
 
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         </div>
@@ -2288,7 +1752,6 @@
 </footer>
 
 
-
 <script>
   // Copiar datos del proveedor
   function copiarDatosProveedor() {
@@ -2313,7 +1776,7 @@
   // Descargar modal como imagen
   function descargarModalImagen() {
     const script = document.createElement('script');
-    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js';
+    script.src = 'https://cdn.jsdelivr.net/npm/html2canvas-pro@1.5.8/dist/html2canvas-pro.min.js';
     script.onload = function () {
       const modalContent = document.getElementById('modal-content');
       html2canvas(modalContent, {
@@ -2354,9 +1817,11 @@
   const modalContent = document.getElementById("modal-content");
   const closeBtn = document.getElementById("modal-close-btn");
   let abortController = null;
+  let ultimoUmbralKm = 50;
 
-  // Cerrar modal
   function cerrarModal() {
+    const umbralInput = document.getElementById("umbral-km");
+    if (umbralInput) ultimoUmbralKm = parseFloat(umbralInput.value) || 50;
     modal.classList.remove("active");
     abortController = null;
   }
@@ -2390,7 +1855,7 @@
         <button class="button button-danger" onclick="cerrarModal();">❌ Cancelar</button>
       </div>
             <div style="margin: 1.5rem 0;">
-        <a href="#encontrar_proveedor" class="button" onclick="cerrarModal();">📣 ¡Encontrar electricista!</a>
+        <a class="button" onclick="mostrarModalBuscarProveedor()">🔍 ¡Encontrar electricista!</a>
         <button class="button" onclick="compartirSeccion();">🗣️ Compartir a un electricista conocido</button>
       </div>
       <div class="modal-legal">
@@ -2473,15 +1938,13 @@
                 <div style="display: flex; justify-content: space-between; padding: 8px 0;">
           <span style="font-weight: 500; color: #5f6368; font-size: 13px;">Fecha y hora</span>
           <span style="color: #202124; font-size: 13px;" id="modal-pagado">
-            <p id="reloj">18/03/2026, 09:26:39</p>
+            <p id="reloj"></p>
           </span>
         </div>
 
         <a onclick="copiarDatosProveedor()" href="#" style="font-size: 1rem; float: inline-start;">📋 Copiar al portapapeles esta información</a><br>
         <a onclick="descargarModalImagen()" href="#" style="font-size: 1rem; float: inline-start;">⬇️ Descargar imagen de esta información</a><br>
-        <a href="#" style="font-size:1rem; color:#d93025; float: inline-start;">⚠️ Reportar problema con este anunciante
-
-        </a>
+        <a href="#" style="font-size:1rem; color:#d93025; float: inline-start;">⚠️ Reportar problema con este anunciante</a>
         <div class="modal-legal">
           Al contactar, confirmas que aceptas 
           <a href="terminos-y-condiciones.html">Términos y Condiciones</a>.
@@ -2641,6 +2104,9 @@
     if (abortController) abortController.abort();
     abortController = new AbortController();
 
+    const umbral = parseFloat(document.getElementById("umbral-km")?.value) || 50;
+    ultimoUmbralKm = umbral;
+
     try {
       if (!navigator.geolocation) {
         throw new Error("Tu navegador no permite geolocalización.");
@@ -2657,9 +2123,8 @@
       const posicion = await obtenerUbicacionConFallback();
       const userLat = posicion.coords.latitude;
       const userLon = posicion.coords.longitude;
-      const umbral = parseFloat(document.getElementById("umbral-km")?.value) || 50;
 
-      const res = await fetch("disponibles.json", { signal: abortController.signal });
+      const res = await fetch("/disponibles.json", { signal: abortController.signal });
       const data = await res.json();
 
       data.forEach(item => {
@@ -2682,50 +2147,740 @@
     }
   }
 
- 
-  
-  document.addEventListener("click", function(e) {
-    
-      if (e.target.matches('a[href^="tel:"]')) {
+
+  const AVISO_FINAL = `<br><b>Este sitio funciona exclusivamente como medio publicitario y no presta servicios de electricidad.</b>`;
+
+  const CANALES = [
+    {
+      selector: 'a[href^="tel:"]',
+      msg: `No hay un electricista en este espacio publicitario. Este botón es una demostración.`
+    },
+    {
+      selector: '#contacto a[href*="wa.me"], #contacto a[href*="api.whatsapp.com"], div.servicio a.button1',
+      msg: `No hay un electricista en este espacio publicitario.<br>Si continuás serás redirigido al WhatsApp de serviciosweb.net.ar a modo de ejemplo.`
+    },
+    {
+      selector: '#contacto a[href*="instagram.com"]',
+      msg: `No hay un electricista en este espacio publicitario. El botón es una demo,<br>estás por visitar el Instagram de serviciosweb.net.ar.`
+    },
+    {
+      selector: '#contacto a[href*="facebook.com"]',
+      msg: `No hay un electricista en este espacio publicitario. El botón es una demo,<br>estás por visitar el Facebook de serviciosweb.net.ar.`
+    },
+    {
+        selector: '#contacto a.mapa-overlay, #contacto a.btn-mapa',
+        msg: `No hay un electricista en este espacio publicitario. <br>Estás por visitar un mapa de demostración`
+      },
+  ];
+
+  document.addEventListener("click", function (e) {
+    for (const canal of CANALES) {
+      const link = e.target.closest(canal.selector);
+      if (!link) continue;
+
       e.preventDefault();
-      mostrarModalAdvertencia(
-        `⚠️ No hay un electricista en este espacio publicitario. Este boton es una demostración. <br><b> Este sitio funciona exclusivamente como medio publicitario y no presta servicios de electricidad.</b>`,
-        e.target.href
-      );
+      mostrarModalAdvertencia(`⚠️ ${canal.msg}${AVISO_FINAL}`, link.href);
+      return;
     }
+  });
 
-      if (e.target.matches('#contacto a[href*="wa.me"], #contacto a[href*="api.whatsapp.com"]')) {
-        e.preventDefault();
-        mostrarModalAdvertencia(
-          `⚠️ No hay un electricista en este espacio publicitario. <br>Si continuas serás redirigido al WhatsApp de serviciosweb.net.ar a modo de ejemplo <br><b>Este sitio funciona exclusivamente como medio publicitario y no presta servicios de electricidad.</b>`,
-          e.target.href
-        );
-      }
 
-      if (e.target.matches('div.servicio a.button1')) {
-        e.preventDefault();
-        mostrarModalAdvertencia(
-          `⚠️ No hay un electricista en este espacio publicitario. <br>Si continuas serás redirigido al WhatsApp de serviciosweb.net.ar a modo de ejemplo <br><b>Este sitio funciona exclusivamente como medio publicitario y no presta servicios de electricidad.</b>`,
-          e.target.href
-        );
-      }
 
-      if (e.target.matches('#contacto a[href*="instagram.com"]')) {
-        e.preventDefault();
-        mostrarModalAdvertencia(
-          `⚠️ No hay un electricista en este espacio publicitario. El boton es una demo, <br><b>estás por visitar el Instagram de serviciosweb.net.ar</b>`,
-          e.target.href
-        );
-      }
+ function mostrarModalBuscarProveedor() {
+    const html = `
+      <h1 id="modal-title">Buscar electricista</h1>
+      
+      <p>Encontrá electricistas cerca tuyo ordenados por distancia.</p>
+      <br>
+      <p>Escribe una Distancia máxima (km):</p>
+      
+      <input type="number" id="umbral-km" value="${ultimoUmbralKm}" step="1" min="0" style="width: 100%; text-align: center;">
+      <p>Si hay proveedores aparecerán del más cercano al más lejano.</p>
+      <button onclick="buscarPorUbicacion();" class="button button1">🔍 Buscar proveedor de servicios</button>
+      <button class="button button-danger" onclick="cerrarModal();">❌ Cerrar</button>
+     
 
-      if (e.target.matches('#contacto a[href*="facebook.com"]')) {
-        e.preventDefault();
-        mostrarModalAdvertencia(
-          `⚠️ No hay un electricista en este espacio publicitario. El boton es una demo. <br><b>Estás por visitar el facebook de serviciosweb.net.ar</b>`,
-          e.target.href
-        );
-      }
-    });
+<select id="localidades" onchange="window.location.href=this.value;" class="button button2" style="width:80%;background-color: var(--fondo);color: white;">
+<option value="">Seleccione una opción</option>
+
+
+<option value="entre-rios/arroyo-baru.html" style="color: darkred;">
+    ✘ | arroyo barú
+</option>
+
+<option value="entre-rios/colon.html" style="color: darkred;">
+    ✘ | colón
+</option>
+
+<option value="entre-rios/colonia-hugues.html" style="color: darkred;">
+    ✘ | colonia hugues
+</option>
+
+<option value="entre-rios/hambis.html" style="color: darkred;">
+    ✘ | hambis
+</option>
+
+<option value="entre-rios/hocker.html" style="color: darkred;">
+    ✘ | hocker
+</option>
+
+<option value="entre-rios/la-clarita.html" style="color: darkred;">
+    ✘ | la clarita
+</option>
+
+<option value="entre-rios/pueblo-cazes.html" style="color: darkred;">
+    ✘ | pueblo cazes
+</option>
+
+<option value="entre-rios/pueblo-liebig-s.html" style="color: darkred;">
+    ✘ | pueblo liebig's
+</option>
+
+<option value="entre-rios/san-jose.html" style="color: darkred;">
+    ✘ | san josé
+</option>
+
+<option value="entre-rios/ubajay.html" style="color: darkred;">
+    ✘ | ubajay
+</option>
+
+<option value="entre-rios/villa-elisa.html" style="color: darkred;">
+    ✘ | villa elisa
+</option>
+
+<option value="entre-rios/calabacilla.html" style="color: darkred;">
+    ✘ | calabacilla
+</option>
+
+<option value="entre-rios/clodomiro-ledesma.html" style="color: darkred;">
+    ✘ | clodomiro ledesma
+</option>
+
+<option value="entre-rios/colonia-ayui.html" style="color: darkred;">
+    ✘ | colonia ayuí
+</option>
+
+<option value="entre-rios/colonia-general-roca.html" style="color: darkred;">
+    ✘ | colonia general roca
+</option>
+
+<option value="entre-rios/concordia.html" style="color: darkred;">
+    ✘ | concordia
+</option>
+
+<option value="entre-rios/estacion-yerua.html" style="color: darkred;">
+    ✘ | estación yeruá
+</option>
+
+<option value="entre-rios/estacion-yuqueri.html" style="color: darkred;">
+    ✘ | estación yuquerí
+</option>
+
+<option value="entre-rios/estancia-grande.html" style="color: darkred;">
+    ✘ | estancia grande
+</option>
+
+<option value="entre-rios/la-criolla.html" style="color: darkred;">
+    ✘ | la criolla
+</option>
+
+<option value="entre-rios/los-charruas.html" style="color: darkred;">
+    ✘ | los charrúas
+</option>
+
+<option value="entre-rios/nueva-escocia.html" style="color: darkred;">
+    ✘ | nueva escocia
+</option>
+
+<option value="entre-rios/pedernal.html" style="color: darkred;">
+    ✘ | pedernal
+</option>
+
+<option value="entre-rios/puerto-yerua.html" style="color: darkred;">
+    ✘ | puerto yeruá
+</option>
+
+<option value="entre-rios/aldea-brasilera.html" style="color: darkred;">
+    ✘ | aldea brasilera
+</option>
+
+<option value="entre-rios/aldea-grapschental.html" style="color: darkred;">
+    ✘ | aldea grapschental
+</option>
+
+<option value="entre-rios/aldea-protestante.html" style="color: darkred;">
+    ✘ | aldea protestante
+</option>
+
+<option value="entre-rios/aldea-salto.html" style="color: darkred;">
+    ✘ | aldea salto
+</option>
+
+<option value="entre-rios/aldea-san-francisco.html" style="color: darkred;">
+    ✘ | aldea san francisco
+</option>
+
+<option value="entre-rios/aldea-spatzenkutter.html" style="color: darkred;">
+    ✘ | aldea spatzenkutter
+</option>
+
+<option value="entre-rios/aldea-valle-maria.html" style="color: darkred;">
+    ✘ | aldea valle maría
+</option>
+
+<option value="entre-rios/colonia-ensayo.html" style="color: darkred;">
+    ✘ | colonia ensayo
+</option>
+
+<option value="entre-rios/diamante.html" style="color: darkred;">
+    ✘ | diamante
+</option>
+
+<option value="entre-rios/estacion-camps.html" style="color: darkred;">
+    ✘ | estación camps
+</option>
+
+<option value="entre-rios/general-alvear.html" style="color: darkred;">
+    ✘ | general alvear
+</option>
+
+<option value="entre-rios/general-racedo-el-carmen.html" style="color: darkred;">
+    ✘ | general racedo (el carmen)
+</option>
+
+<option value="entre-rios/general-ramirez.html" style="color: darkred;">
+    ✘ | general ramírez
+</option>
+
+<option value="entre-rios/la-juanita.html" style="color: darkred;">
+    ✘ | la juanita
+</option>
+
+<option value="entre-rios/las-jaulas.html" style="color: darkred;">
+    ✘ | las jaulas
+</option>
+
+<option value="entre-rios/paraje-la-virgen.html" style="color: darkred;">
+    ✘ | paraje la virgen
+</option>
+
+<option value="entre-rios/puerto-las-cuevas.html" style="color: darkred;">
+    ✘ | puerto las cuevas
+</option>
+
+<option value="entre-rios/villa-libertador-san-martin.html" style="color: darkred;">
+    ✘ | villa libertador san martín
+</option>
+
+<option value="entre-rios/chajari.html" style="color: darkred;">
+    ✘ | chajarí
+</option>
+
+<option value="entre-rios/colonia-alemana.html" style="color: darkred;">
+    ✘ | colonia alemana
+</option>
+
+<option value="entre-rios/colonia-pena.html" style="color: darkred;">
+    ✘ | colonia peña
+</option>
+
+<option value="entre-rios/federacion.html" style="color: darkred;">
+    ✘ | federación
+</option>
+
+<option value="entre-rios/los-conquistadores.html" style="color: darkred;">
+    ✘ | los conquistadores
+</option>
+
+<option value="entre-rios/san-jaime-de-la-frontera.html" style="color: darkred;">
+    ✘ | san jaime de la frontera
+</option>
+
+<option value="entre-rios/san-pedro.html" style="color: darkred;">
+    ✘ | san pedro
+</option>
+
+<option value="entre-rios/san-ramon.html" style="color: darkred;">
+    ✘ | san ramón
+</option>
+
+<option value="entre-rios/santa-ana.html" style="color: darkred;">
+    ✘ | santa ana
+</option>
+
+<option value="entre-rios/villa-del-rosario.html" style="color: darkred;">
+    ✘ | villa del rosario
+</option>
+
+<option value="entre-rios/conscripto-bernardi.html" style="color: darkred;">
+    ✘ | conscripto bernardi
+</option>
+
+<option value="entre-rios/aldea-san-isidro-el-cimarron.html" style="color: darkred;">
+    ✘ | aldea san isidro (el cimarrón)
+</option>
+
+<option value="entre-rios/federal.html" style="color: darkred;">
+    ✘ | federal
+</option>
+
+<option value="entre-rios/nueva-vizcaya.html" style="color: darkred;">
+    ✘ | nueva vizcaya
+</option>
+
+<option value="entre-rios/sauce-de-luna.html" style="color: darkred;">
+    ✘ | sauce de luna
+</option>
+
+<option value="entre-rios/san-jose-de-feliciano.html" style="color: darkred;">
+    ✘ | san josé de feliciano
+</option>
+
+<option value="entre-rios/san-victor.html" style="color: darkred;">
+    ✘ | san víctor
+</option>
+
+<option value="entre-rios/aldea-asuncion.html" style="color: darkred;">
+    ✘ | aldea asunción
+</option>
+
+<option value="entre-rios/estacion-lazo.html" style="color: darkred;">
+    ✘ | estación lazo
+</option>
+
+<option value="entre-rios/general-galarza.html" style="color: darkred;">
+    ✘ | general galarza
+</option>
+
+<option value="entre-rios/gualeguay.html" style="color: darkred;">
+    ✘ | gualeguay
+</option>
+
+<option value="entre-rios/puerto-ruiz.html" style="color: darkred;">
+    ✘ | puerto ruiz
+</option>
+
+<option value="entre-rios/aldea-san-antonio.html" style="color: darkred;">
+    ✘ | aldea san antonio
+</option>
+
+<option value="entre-rios/aldea-san-juan.html" style="color: darkred;">
+    ✘ | aldea san juan
+</option>
+
+<option value="entre-rios/enrique-carbo.html" style="color: darkred;">
+    ✘ | enrique carbó
+</option>
+
+<option value="entre-rios/estacion-escrina.html" style="color: darkred;">
+    ✘ | estación escriña
+</option>
+
+<option value="entre-rios/faustino-m-parera.html" style="color: darkred;">
+    ✘ | faustino m. parera
+</option>
+
+<option value="entre-rios/general-almada.html" style="color: darkred;">
+    ✘ | general almada
+</option>
+
+<option value="entre-rios/gilbert.html" style="color: darkred;">
+    ✘ | gilbert
+</option>
+
+<option value="entre-rios/gualeguaychu.html" style="color: darkred;">
+    ✘ | gualeguaychú
+</option>
+
+<option value="entre-rios/irazusta.html" style="color: darkred;">
+    ✘ | irazusta
+</option>
+
+<option value="entre-rios/larroque.html" style="color: darkred;">
+    ✘ | larroque
+</option>
+
+<option value="entre-rios/pastor-britos.html" style="color: darkred;">
+    ✘ | pastor britos
+</option>
+
+<option value="entre-rios/pueblo-general-belgrano.html" style="color: darkred;">
+    ✘ | pueblo general belgrano
+</option>
+
+<option value="entre-rios/urdinarrain.html" style="color: darkred;">
+    ✘ | urdinarrain
+</option>
+
+<option value="entre-rios/ceibas.html" style="color: darkred;">
+    ✘ | ceibas
+</option>
+
+<option value="entre-rios/ibicuy.html" style="color: darkred;">
+    ✘ | ibicuy
+</option>
+
+<option value="entre-rios/medanos.html" style="color: darkred;">
+    ✘ | médanos
+</option>
+
+<option value="entre-rios/villa-paranacito.html" style="color: darkred;">
+    ✘ | villa paranacito
+</option>
+
+<option value="entre-rios/alcaraz.html" style="color: darkred;">
+    ✘ | alcaraz
+</option>
+
+<option value="entre-rios/bovril.html" style="color: darkred;">
+    ✘ | bovril
+</option>
+
+<option value="entre-rios/colonia-avigdor.html" style="color: darkred;">
+    ✘ | colonia avigdor
+</option>
+
+<option value="entre-rios/el-solar.html" style="color: darkred;">
+    ✘ | el solar
+</option>
+
+<option value="entre-rios/la-paz.html" style="color: darkred;">
+    ✘ | la paz
+</option>
+
+<option value="entre-rios/piedras-blancas.html" style="color: darkred;">
+    ✘ | piedras blancas
+</option>
+
+<option value="entre-rios/san-gustavo.html" style="color: darkred;">
+    ✘ | san gustavo
+</option>
+
+<option value="entre-rios/santa-elena.html" style="color: darkred;">
+    ✘ | santa elena
+</option>
+
+<option value="entre-rios/sir-leonard.html" style="color: darkred;">
+    ✘ | sir leonard
+</option>
+
+<option value="entre-rios/aranguren.html" style="color: darkred;">
+    ✘ | aranguren
+</option>
+
+<option value="entre-rios/betbeder.html" style="color: darkred;">
+    ✘ | betbeder
+</option>
+
+<option value="entre-rios/don-cristobal.html" style="color: darkred;">
+    ✘ | don cristóbal
+</option>
+
+<option value="entre-rios/febre.html" style="color: darkred;">
+    ✘ | febré
+</option>
+
+<option value="entre-rios/hernandez.html" style="color: darkred;">
+    ✘ | hernández
+</option>
+
+<option value="entre-rios/lucas-gonzalez.html" style="color: darkred;">
+    ✘ | lucas gonzález
+</option>
+
+<option value="entre-rios/nogoya.html" style="color: darkred;">
+    ✘ | nogoyá
+</option>
+
+<option value="entre-rios/xx-de-setiembre.html" style="color: darkred;">
+    ✘ | xx de setiembre
+</option>
+
+<option value="entre-rios/aldea-maria-luisa.html" style="color: darkred;">
+    ✘ | aldea maría luisa
+</option>
+
+<option value="entre-rios/aldea-san-rafael.html" style="color: darkred;">
+    ✘ | aldea san rafael
+</option>
+
+<option value="entre-rios/aldea-santa-maria.html" style="color: darkred;">
+    ✘ | aldea santa maría
+</option>
+
+<option value="entre-rios/aldea-santa-rosa.html" style="color: darkred;">
+    ✘ | aldea santa rosa
+</option>
+
+<option value="entre-rios/cerrito.html" style="color: darkred;">
+    ✘ | cerrito
+</option>
+
+<option value="entre-rios/colonia-avellaneda.html" style="color: darkred;">
+    ✘ | colonia avellaneda
+</option>
+
+<option value="entre-rios/colonia-crespo.html" style="color: darkred;">
+    ✘ | colonia crespo
+</option>
+
+<option value="entre-rios/crespo.html" style="color: darkred;">
+    ✘ | crespo
+</option>
+
+<option value="entre-rios/el-palenque.html" style="color: darkred;">
+    ✘ | el palenque
+</option>
+
+<option value="entre-rios/el-pingo.html" style="color: darkred;">
+    ✘ | el pingo
+</option>
+
+<option value="entre-rios/el-ramblon.html" style="color: darkred;">
+    ✘ | el ramblón
+</option>
+
+<option value="entre-rios/hasenkamp.html" style="color: darkred;">
+    ✘ | hasenkamp
+</option>
+
+<option value="entre-rios/hernandarias.html" style="color: darkred;">
+    ✘ | hernandarias
+</option>
+
+<option value="entre-rios/la-picada.html" style="color: darkred;">
+    ✘ | la picada
+</option>
+
+<option value="entre-rios/las-tunas.html" style="color: darkred;">
+    ✘ | las tunas
+</option>
+
+<option value="entre-rios/maria-grande.html" style="color: darkred;">
+    ✘ | maría grande
+</option>
+
+<option value="entre-rios/oro-verde.html" style="color: darkred;">
+    ✘ | oro verde
+</option>
+
+<option value="entre-rios/parana.html" style="color: darkred;">
+    ✘ | paraná
+</option>
+
+<option value="entre-rios/pueblo-bellocq-las-garzas.html" style="color: darkred;">
+    ✘ | pueblo bellocq (las garzas)
+</option>
+
+<option value="entre-rios/pueblo-brugo.html" style="color: darkred;">
+    ✘ | pueblo brugo
+</option>
+
+<option value="entre-rios/pueblo-general-san-martin.html" style="color: darkred;">
+    ✘ | pueblo general san martín
+</option>
+
+<option value="entre-rios/san-benito.html" style="color: darkred;">
+    ✘ | san benito
+</option>
+
+<option value="entre-rios/sauce-montrull.html" style="color: darkred;">
+    ✘ | sauce montrull
+</option>
+
+<option value="entre-rios/sauce-pinto.html" style="color: darkred;">
+    ✘ | sauce pinto
+</option>
+
+<option value="entre-rios/segui.html" style="color: darkred;">
+    ✘ | seguí
+</option>
+
+<option value="entre-rios/sosa.html" style="color: darkred;">
+    ✘ | sosa
+</option>
+
+<option value="entre-rios/tabossi.html" style="color: darkred;">
+    ✘ | tabossi
+</option>
+
+<option value="entre-rios/tezanos-pinto.html" style="color: darkred;">
+    ✘ | tezanos pinto
+</option>
+
+<option value="entre-rios/viale.html" style="color: darkred;">
+    ✘ | viale
+</option>
+
+<option value="entre-rios/villa-fontana.html" style="color: darkred;">
+    ✘ | villa fontana
+</option>
+
+<option value="entre-rios/villa-gdor-luis-f-etchevehere.html" style="color: darkred;">
+    ✘ | villa gdor. luis f. etchevehere
+</option>
+
+<option value="entre-rios/villa-urquiza.html" style="color: darkred;">
+    ✘ | villa urquiza
+</option>
+
+<option value="entre-rios/general-campos.html" style="color: darkred;">
+    ✘ | general campos
+</option>
+
+<option value="entre-rios/san-salvador.html" style="color: darkred;">
+    ✘ | san salvador
+</option>
+
+<option value="entre-rios/altamirano-sur.html" style="color: darkred;">
+    ✘ | altamirano sur
+</option>
+
+<option value="entre-rios/durazno.html" style="color: darkred;">
+    ✘ | durazno
+</option>
+
+<option value="entre-rios/estacion-arroyo-cle.html" style="color: darkred;">
+    ✘ | estación arroyo clé
+</option>
+
+<option value="entre-rios/gobernador-echague.html" style="color: darkred;">
+    ✘ | gobernador echagüe
+</option>
+
+<option value="entre-rios/gobernador-mansilla.html" style="color: darkred;">
+    ✘ | gobernador mansilla
+</option>
+
+<option value="entre-rios/gobernador-sola.html" style="color: darkred;">
+    ✘ | gobernador solá
+</option>
+
+<option value="entre-rios/guardamonte.html" style="color: darkred;">
+    ✘ | guardamonte
+</option>
+
+<option value="entre-rios/las-guachas.html" style="color: darkred;">
+    ✘ | las guachas
+</option>
+
+<option value="entre-rios/macia.html" style="color: darkred;">
+    ✘ | maciá
+</option>
+
+<option value="entre-rios/rosario-del-tala.html" style="color: darkred;">
+    ✘ | rosario del tala
+</option>
+
+<option value="entre-rios/basavilbaso.html" style="color: darkred;">
+    ✘ | basavilbaso
+</option>
+
+<option value="entre-rios/caseros.html" style="color: darkred;">
+    ✘ | caseros
+</option>
+
+<option value="entre-rios/colonia-elia.html" style="color: darkred;">
+    ✘ | colonia elía
+</option>
+
+<option value="entre-rios/concepcion-del-uruguay.html" style="color: darkred;">
+    ✘ | concepción del uruguay
+</option>
+
+<option value="entre-rios/herrera.html" style="color: darkred;">
+    ✘ | herrera
+</option>
+
+<option value="entre-rios/las-moscas.html" style="color: darkred;">
+    ✘ | las moscas
+</option>
+
+<option value="entre-rios/libaros.html" style="color: darkred;">
+    ✘ | líbaros
+</option>
+
+<option value="entre-rios/1o-de-mayo.html" style="color: darkred;">
+    ✘ | 1º de mayo
+</option>
+
+<option value="entre-rios/pronunciamiento.html" style="color: darkred;">
+    ✘ | pronunciamiento
+</option>
+
+<option value="entre-rios/rocamora.html" style="color: darkred;">
+    ✘ | rocamora
+</option>
+
+<option value="entre-rios/santa-anita.html" style="color: darkred;">
+    ✘ | santa anita
+</option>
+
+<option value="entre-rios/villa-mantero.html" style="color: darkred;">
+    ✘ | villa mantero
+</option>
+
+<option value="entre-rios/villa-san-justo.html" style="color: darkred;">
+    ✘ | villa san justo
+</option>
+
+<option value="entre-rios/villa-san-marcial-est-gobernador-urquiza.html" style="color: darkred;">
+    ✘ | villa san marcial (est. gobernador urquiza)
+</option>
+
+<option value="entre-rios/antelo.html" style="color: darkred;">
+    ✘ | antelo
+</option>
+
+<option value="entre-rios/molino-doll.html" style="color: darkred;">
+    ✘ | molino doll
+</option>
+
+<option value="entre-rios/victoria.html" style="color: darkred;">
+    ✘ | victoria
+</option>
+
+<option value="entre-rios/estacion-raices.html" style="color: darkred;">
+    ✘ | estación raíces
+</option>
+
+<option value="entre-rios/ingeniero-miguel-sajaroff.html" style="color: darkred;">
+    ✘ | ingeniero miguel sajaroff
+</option>
+
+<option value="entre-rios/jubileo.html" style="color: darkred;">
+    ✘ | jubileo
+</option>
+
+<option value="entre-rios/paso-de-la-laguna.html" style="color: darkred;">
+    ✘ | paso de la laguna
+</option>
+
+<option value="entre-rios/villa-clara.html" style="color: darkred;">
+    ✘ | villa clara
+</option>
+
+<option value="entre-rios/villa-dominguez.html" style="color: darkred;">
+    ✘ | villa domínguez
+</option>
+
+<option value="entre-rios/villaguay.html" style="color: darkred;">
+    ✘ | villaguay
+</option>
+
+
+
+</option>
+</select>
+      <div class="modal-legal">
+        Al contactar a un proveedor, confirmas que aceptas 
+        <a href="terminos-y-condiciones.html">Términos y Condiciones</a>.
+      </div>
+      `;
+    abrirModal(html);
+
+      inicializarSelect2("#localidades", "Buscar localidad");
+  }
 
 </script></body>
 
@@ -2742,40 +2897,7 @@
             nav.classList.toggle('active');
         });
     });
-</script><section id="stats-widget" data-price="10000" aria-live="polite">
-  <div class="stats-card">
-    <header class="stats-head">
-      <strong>📊 Estadísticas de este espacio (últimos 30 días)</strong>
-      <span class="stats-path">https://www.electricista.net.ar/entre-rios.html</span>
-    </header>
-
-    <div class="stats-grid">
-      <div class="stat">
-        <div class="stat-label">Vistas a esta página</div>
-        <div class="stat-value">4</div>
-      </div>
-      <div class="stat">
-        <div class="stat-label">Clics a WhatsApp</div>
-        <div class="stat-value">-</div>
-      </div>
-      <div class="stat">
-        <div class="stat-label">Tasa de clic (CTR)</div>
-        <div class="stat-value">
--</div>
-      </div>
-      <div class="stat">
-        <div class="stat-label">Clics a Teléfono</div>
-        <div class="stat-value">-</div>
-      </div>
-    </div>
-
-    <footer class="stats-foot">
-        <span class="badge badge-gray">Espacio disponible</span>
-        <span>Podés anunciar aquí por <b>ARS 10.000</b>/mes o <b>ARS 25.000</b>/3 meses.</span>
-    </footer>
-  </div>
-</section>
-
+</script>
 
 
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKWBPJDH" height="0"

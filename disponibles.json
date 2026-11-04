@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "provincia": "entre-rios",
+    "localidad": "concepcion-del-uruguay",
+    "barrio": null,
+    "lat": -32.47808385464366,
+    "lon": -58.24376176275675,
+    "url": "/entre-rios/concepcion-del-uruguay.html?utm_source=geolocalizacion&utm_campaign=buscador"
+  }
+]
