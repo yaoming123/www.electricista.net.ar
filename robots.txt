@@ -1,1 +1,4 @@
+User-agent: *
 Disallow: /*?from=
+
+Sitemap: https://www.electricista.net.ar/sitemap.xml
